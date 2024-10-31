@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		75CBAE572CD3D4A2008892E7 /* asnycImage in Frameworks */ = {isa = PBXBuildFile; productRef = 75CBAE562CD3D4A2008892E7 /* asnycImage */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		75CBADDD2CD3C5D9008892E7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -35,16 +39,6 @@
 			path = fetchRecipes;
 			sourceTree = "<group>";
 		};
-		75CBADDF2CD3C5D9008892E7 /* fetchRecipesTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = fetchRecipesTests;
-			sourceTree = "<group>";
-		};
-		75CBADE92CD3C5D9008892E7 /* fetchRecipesUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = fetchRecipesUITests;
-			sourceTree = "<group>";
-		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75CBAE572CD3D4A2008892E7 /* asnycImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,8 +71,6 @@
 			isa = PBXGroup;
 			children = (
 				75CBADC92CD3C5D8008892E7 /* fetchRecipes */,
-				75CBADDF2CD3C5D9008892E7 /* fetchRecipesTests */,
-				75CBADE92CD3C5D9008892E7 /* fetchRecipesUITests */,
 				75CBADC82CD3C5D8008892E7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -112,6 +105,7 @@
 			);
 			name = fetchRecipes;
 			packageProductDependencies = (
+				75CBAE562CD3D4A2008892E7 /* asnycImage */,
 			);
 			productName = fetchRecipes;
 			productReference = 75CBADC72CD3C5D8008892E7 /* fetchRecipes.app */;
@@ -129,9 +123,6 @@
 			);
 			dependencies = (
 				75CBADDE2CD3C5D9008892E7 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				75CBADDF2CD3C5D9008892E7 /* fetchRecipesTests */,
 			);
 			name = fetchRecipesTests;
 			packageProductDependencies = (
@@ -152,9 +143,6 @@
 			);
 			dependencies = (
 				75CBADE82CD3C5D9008892E7 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				75CBADE92CD3C5D9008892E7 /* fetchRecipesUITests */,
 			);
 			name = fetchRecipesUITests;
 			packageProductDependencies = (
@@ -195,6 +183,9 @@
 			);
 			mainGroup = 75CBADBE2CD3C5D7008892E7;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				75CBAE552CD3D4A2008892E7 /* XCRemoteSwiftPackageReference "asyncImage" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 75CBADC82CD3C5D8008892E7 /* Products */;
 			projectDirPath = "";
@@ -558,6 +549,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		75CBAE552CD3D4A2008892E7 /* XCRemoteSwiftPackageReference "asyncImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/baskurthalit/asyncImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		75CBAE562CD3D4A2008892E7 /* asnycImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 75CBAE552CD3D4A2008892E7 /* XCRemoteSwiftPackageReference "asyncImage" */;
+			productName = asnycImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 75CBADBF2CD3C5D7008892E7 /* Project object */;
 }
